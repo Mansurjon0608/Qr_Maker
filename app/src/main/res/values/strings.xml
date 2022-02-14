@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">QR Maker</string>
+    <string name="title_activity">MainActivity</string>
+</resources>
