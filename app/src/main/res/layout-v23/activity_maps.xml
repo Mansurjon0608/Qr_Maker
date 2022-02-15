@@ -9,30 +9,47 @@
     android:padding="20dp"
     tools:context=".MainActivity">
 
+    <com.airbnb.lottie.LottieAnimationView
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_margin="20dp"
+        map:lottie_autoPlay="true"
+        map:lottie_loop="true"
+        map:lottie_rawRes="@raw/loading" />
+
+    <TextView
+        android:id="@+id/orderTimer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:text="00.00"
+        android:textSize="20sp"
+        android:textColor="@color/black" />
+
+
     <EditText
         android:id="@+id/edit_text"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/dialog_bg"
-        android:textSize="18sp"
         android:hint="Text..."
-        android:textStyle="italic"
+        android:padding="6dp"
         android:paddingStart="12dp"
-        android:padding="6dp"/>
+        android:textSize="18sp"
+        android:textStyle="italic" />
 
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btn_make"
         android:layout_width="wrap_content"
         android:layout_height="50dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/shape1"
-        android:textSize="16sp"
-        android:textColor="@color/black"
-        android:text="Make"
         android:foreground="?android:attr/selectableItemBackground"
         android:gravity="center"
         android:paddingHorizontal="35dp"
-        android:layout_marginTop="20dp"
-        />
+        android:text="Make"
+        android:textColor="@color/black"
+        android:textSize="16sp" />
 
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -54,13 +71,12 @@
             android:id="@+id/txt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
             android:text="Text"
             android:textStyle="italic"
             map:layout_constraintBottom_toBottomOf="parent"
             map:layout_constraintRight_toRightOf="parent"
-            map:layout_constraintTop_toBottomOf="@id/imgQrCode"
-            android:layout_marginTop="6dp"
-            />
+            map:layout_constraintTop_toBottomOf="@id/imgQrCode" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
