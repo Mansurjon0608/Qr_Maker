@@ -23,8 +23,9 @@
         android:layout_height="wrap_content"
         android:layout_marginBottom="20dp"
         android:text="00.00"
-        android:textSize="20sp"
-        android:textColor="@color/black" />
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="20sp" />
 
 
     <EditText
@@ -38,6 +39,7 @@
         android:textSize="18sp"
         android:textStyle="italic" />
 
+
     <androidx.appcompat.widget.AppCompatTextView
         android:id="@+id/btn_make"
         android:layout_width="wrap_content"
@@ -50,7 +52,6 @@
         android:text="Make"
         android:textColor="@color/black"
         android:textSize="16sp" />
-
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/cons_img"

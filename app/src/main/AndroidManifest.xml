@@ -2,8 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.mstar004.googlemap">
 
-
     <uses-permission android:name="android.permission.VIBRATE" />
+
     <application
         android:allowBackup="true"
         android:icon="@drawable/ic_baseline_qr_code_scanner_24"
@@ -11,7 +11,10 @@
         android:roundIcon="@android:drawable/dark_header"
         android:supportsRtl="true"
         android:theme="@style/Theme.GoogleMap">
-
+        <activity
+            android:name=".MainActivity2"
+            android:exported="false"
+            android:parentActivityName=".MainActivity"/>
         <activity
             android:name=".MainActivity"
             android:exported="true"
